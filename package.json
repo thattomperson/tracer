@@ -14,7 +14,8 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "pages:dev": "wrangler pages dev --compatibility-date=2023-08-05 --proxy 5173 -- npm run dev",
-    "pages:deploy": "NODE_VERSION=18 npm run build && wrangler pages deploy .svelte-kit/cloudflare"
+    "pages:deploy": "NODE_VERSION=18 npm run build && wrangler pages deploy .svelte-kit/cloudflare",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@playwright/test": "^1.28.1",
@@ -26,6 +27,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte": "^2.26.0",
+    "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0",
     "prettier-plugin-svelte": "^3.0",
