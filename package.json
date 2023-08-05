@@ -14,7 +14,7 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"pages:dev": "wrangler pages dev --compatibility-date=2023-08-05 --proxy 5173 -- npm run dev",
-		"pages:deploy": "NODE_VERSION=16 npm run build && wrangler pages deploy .svelte-kit/cloudflare"
+		"pages:deploy": "NODE_VERSION=18 npm run build && wrangler pages deploy .svelte-kit/cloudflare"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",

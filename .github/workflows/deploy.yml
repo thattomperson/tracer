@@ -64,5 +64,7 @@ jobs:
       - uses: actions/setup-node@v3
       - name: Install dependencies
         run: npm ci
-      - name: Run tests
+      - name: Configure Wrangler
+        run: npx wrangler config ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Deploy
         run: npm run pages:deploy
