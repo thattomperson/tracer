@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: ['main']
+    branches: ["main"]
   pull_request:
-    branches: ['main']
+    branches: ["main"]
 
 jobs:
   tests_unit:
@@ -58,7 +58,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    needs: ['lint', 'tests_e2e', 'tests_unit', 'tests_types']
+    needs: ["lint", "tests_e2e", "tests_unit", "tests_types"]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
       - uses: actions/checkout@v3
