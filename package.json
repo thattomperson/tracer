@@ -18,7 +18,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@playwright/test": "^1.38.1",
+    "@playwright/test": "^1.39.0",
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-cloudflare": "^2.3.3",
     "@sveltejs/kit": "^1.25.2",
